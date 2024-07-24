@@ -3,7 +3,7 @@ import React from 'react'
 export default function Hero() {
     return (
         <>
-            <div className='text-center mt-5 '>
+            <div className='text-center mt-5'>
                 <h1 className='text-[#1A5219]  font-700 lg:leading-[1.4] xs:text-2xl md:text-4xl lg:text-5xl'>STAY AHEAD OF THE GAME, <br /> ALL FOR FREE</h1>
                 <p className='text-[#808080] xs:w-[90%]  md:w-[70%] lg:w-[40%] mx-auto'>From Analysis to Victory, Elevate your football knowledge with our cutting edge Prediction Platform</p>
             </div>

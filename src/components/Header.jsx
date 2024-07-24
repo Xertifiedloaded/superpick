@@ -13,7 +13,7 @@ export default function Header() {
                 <div className='xs:block lg:hidden'>
                <img src={hamburger} alt="" />
                 </div>
-                <nav className=' xs:hidden lg:flex  lg:w-[90%] justify-between items-center'>
+                <nav className=' xs:hidden lg:flex   lg:w-[80%] justify-between items-center'>
                     <ul className='flex gap-5 bg-[#247423] p-5 rounded-xl'>
                         {
                             navbar.map((items, idx) => {
