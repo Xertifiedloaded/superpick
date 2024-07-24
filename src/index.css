@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background: #E9F1E9;
+  font-family: "Noto Sans", sans-serif;
+
+}
+.hero{
+background-repeat: no-repeat;
+  background-image: url(./assets/winner.svg);
+}
+.video-responsive {
+  width: 100%;
+}
+
