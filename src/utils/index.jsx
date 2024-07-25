@@ -14,6 +14,86 @@ import sevilla from '../assets/sevilla.svg'
 import spurs from '../assets/tottenham_hotspur.svg'
 import chelsea from '../assets/chelsea.svg'
 import liverpool from '../assets/liverpool.png'
+import woman from '../assets/woman.svg'
+
+
+export const footerList = [
+    
+        {
+            title: "Resources",
+            subFooter: [
+                {
+                    name:"Home",
+                    path:""
+                },
+                {
+                    name:"About us",
+                    path:""
+                },
+                {
+                    name:"Leadersboard",
+                    path:""
+                },
+                {
+                    name:"Results",
+                    path:""
+                },
+                {
+                    name:"Refer A Friend",
+                    path:""
+                },
+                {
+                    name:"Contact us",
+                    path:""
+                },
+                {
+                    name:"FAQS",
+                    path:""
+                },
+            ]
+        },
+        {
+            title: "Legal",
+            subFooter: [
+                {
+                    name:"Community",
+                    path:""
+                },
+                {
+                    name:"Privacy Policy",
+                    path:""
+                },
+                {
+                    name:"Terms and Condition",
+                    path:""
+                },
+                {
+                    name:"Cookie Policy",
+                    path:""
+                },
+           
+            ]
+        },
+
+    
+]
+export const testimonial = [
+    {
+        name: "Ayomide",
+        photo: woman,
+        content: "I’ve always been passionate about football,  but it wasn’t until I discovered 9ja parrot picks that I began to excel. Thanks to 9ja parrot picks, I.m not just watching games. Im predicting their outcomes with Precision and Confidence."
+    },
+    {
+        name: "Ayomide",
+        photo: woman,
+        content: "I’ve always been passionate about football,  but it wasn’t until I discovered 9ja parrot picks that I began to excel. Thanks to 9ja parrot picks, I.m not just watching games. Im predicting their outcomes with Precision and Confidence."
+    },
+    {
+        name: "Ayomide",
+        photo: woman,
+        content: "I’ve always been passionate about football,  but it wasn’t until I discovered 9ja parrot picks that I began to excel. Thanks to 9ja parrot picks, I.m not just watching games. Im predicting their outcomes with Precision and Confidence."
+    },
+]
 export const navbar = [
     {
         title: "Home",

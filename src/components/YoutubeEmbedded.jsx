@@ -22,5 +22,4 @@ const YouTubeEmbed = () => {
         </div>
     );
 };
-
 export default YouTubeEmbed;
