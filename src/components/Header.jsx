@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo2.svg'
 import { navbar } from '../utils'
 import hamburger from '../assets/hamburger.svg'
 export default function Header() {
@@ -7,8 +7,7 @@ export default function Header() {
         <>
             <header className='flex mt-4 py-4 w-[95%] justify-between items-center mx-auto '>
                 <div className='flex lg:w-[20%] items-center'>
-                    <img className='lg:w-14 lg:h-14 xs:w-12 xs:h-10' src={logo} alt="" />
-                    <h1 className='text-2xl'>xertypicks</h1>
+                    <img className='lg:w-28 lg:h-16 xs:w-24 xs:h-10' src={logo} alt="" />
                 </div>
                 <div className='xs:block lg:hidden'>
                <img src={hamburger} alt="" />
