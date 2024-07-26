@@ -17,6 +17,39 @@ import liverpool from '../assets/liverpool.png'
 import woman from '../assets/woman.svg'
 
 
+
+export const faqData=[
+    {
+        question:"What is 9ja parrot picks?",
+        answer:"jfikdmdkmdcmkmdknckdnckdnkcdnkc"
+
+    },
+    {
+        question:"How to Play?",
+        answer:"jfikdmdkmdcmkmdknckdnckdnkcdnkc"
+
+    },
+    {
+        question:"Is there a 9ja Parrot picks app?",
+        answer:"jfikdmdkmdcmkmdknckdnckdnkcdnkc"
+
+    },
+    {
+        question:"Do I need money to play?",
+        answer:"jfikdmdkmdcmkmdknckdnckdnkcdnkc"
+
+    },
+    {
+        question:"Can I edit my predictions?",
+        answer:"jfikdmdkmdcmkmdknckdnckdnkcdnkc"
+
+    },
+]
+
+
+
+
+
 export const footerList = [
     
         {

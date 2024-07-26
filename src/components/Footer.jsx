@@ -10,6 +10,10 @@ export default function Footer() {
           <img className='w-28 h-28' src={logo} alt="" />
           <p className='text-white text-700'>ALL FOR LOVE</p>
         </div>
+
+
+
+
         <ul className='grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
           {
             footerList.map((items, idx) => {

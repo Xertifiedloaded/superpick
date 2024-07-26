@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hero from '../components/Hero'
 import Button from '../components/Button'
 import Fixtures from '../components/Fixtures';
 import YouTubeEmbed from '../components/YoutubeEmbedded';
 import Carousel from '../components/Carousel';
-import { testimonial } from '../utils';
-
+import faqImage from '../assets/faq.svg'
+import { faqData, testimonial } from '../utils';
+import downChevron from '../assets/chevron-down.svg'
 
 export default function Landing() {
+    const [visible, setLimit] = useState(4)
+    const [click, setClicked] = useState(false)
+    const [readMore, setReadMore] = useState(false)
+    const showMore = () => {
+        setLimit((preValue) => preValue + 4)
+    }
+    const showLess = () => {
+        setLimit((preValue) => preValue - 4)
+    }
+    const toggleFaq = idx => {
+        if (click === idx) {
+            return (
+                setClicked(null)
+            )
+        }
+        setClicked(idx)
+    }
     return (
         <>
             <Hero />
@@ -16,7 +34,33 @@ export default function Landing() {
             </div>
             <Fixtures />
             <YouTubeEmbed />
-            {/* <Carousel /> */}
+            <div className="faq w-[95%] mt-[100px] mx-auto">
+                <div className='border border-b border-t-0 border-l-0 border-r-0 border-b-[#808080]  '>
+                    <h1 className='text-[#1A5219] text-xl py-2'>FAQs</h1>
+                </div>
+                <section className='md:flex xs:block mt-[50px] justify-between items-center'>
+                    <div className='md:w-[50%] xs:w-full  md:mx-auto'>
+                        <img className='w-[400px]' src={faqImage} alt="" />
+                    </div>
+                    <div className='md:w-[50%]'>
+                        {faqData.slice(0, visible).map((items, idx) => (
+                            <div onClick={() => toggleFaq(idx)} className='bg-white rounded-md px-4 py-5 flex justify-between items-center mt-3 '>
+                                <ul>
+                                    <li className='text-md text-[#545454]'>
+                                        {items.question}
+                                    </li>
+                                    {click === idx && <small className={`${click === idx ? "translate-y-0 transition-all duration-500 ease-in-out" : "translate-y-[-40px] transition-all duration-500 ease-in-out"}`}>{items.answer}</small>}
+                                </ul>
+                                <img className={`w-4 h-4 ${click === idx ? 'rotate-180 transition-all duration-500 ease-in-out' : 'rotate-0 transition-all duration-500 ease-in-out'} `} src={downChevron} alt="" />
+                            </div>
+                        ))}
+                        <div className='text-center mt-4'>
+                            <button className='border border-[#8A8A8A] p-3 rounded-lg text-sm' >{visible <= 6 ? <p className='text-[#333333]' onClick={showMore}>More FAQs</p> :
+                                <p className='text-[#333333] text-sm' onClick={showLess}>Show FAQs</p>}</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <div className='w-[95%] mt-[100px] mx-auto'>
                 <div className='text-center lg:w-[60%] xs:w-full mx-auto'>
                     <h1 className='text-[#216A20] xs:text-4xl md:text-5xl'>Testimonials</h1>
